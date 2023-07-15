@@ -1,0 +1,2 @@
+black
+git+https://github.com/remotethings/tracking-api-python.git
