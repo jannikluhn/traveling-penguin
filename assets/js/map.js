@@ -21,7 +21,7 @@ const POINTS_URL =
       if (data.length === 0) {
         return;
       }
-      data = [data[0]]; // TODO: fix when filtering works properly
+      data = [data[0], ...data.slice(3)];
       map.setView(data[data.length - 1].location, 13);
 
       for (const [i, p] of data.entries()) {
